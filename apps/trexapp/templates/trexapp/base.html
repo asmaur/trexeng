@@ -1,0 +1,163 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>TREX Engenharia | Soluções Inovadoras de engenharia.</title>
+
+    <link rel="stylesheet" href="{% static "vendor/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+</head>
+
+<body>
+
+
+    <!--navbar -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="/">
+     <img src="{% static "imagens/trex_avatar_40.jpg" %}" alt="">
+      Trex Engenharia
+      </a>
+  <button class="trex-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Início <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sobre-nos">Sobre</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Serviços
+        </a>
+        <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/projetos/ppci">PPCI</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/projetos/hidro-sanitarios">Projetos Hidrosanitários</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/projetos/eletricos">Projetos Elétricos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/projetos/estruturas">Projetos Estruturais</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/projetos/reformas">Projetos de Reformas</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/projetos/bim-3d">BIM & 3D</a>
+        </div>
+      </li>
+     <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Projetos</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="/contato/">Contato</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+    <!-- End navbar -->
+
+{% block content %}
+
+
+
+{% endblock %}
+
+
+<!-- end trabalhe -->
+   <div id="trabalhe" class="d-flex align-items-center justify-content-center">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+                   <h2>Trabalhe Conosco</h2>
+                   <p>Entre em contato e junto vamos construir o seu sonho.</p>
+                   <a href="/contato/" class="btn btn-dark btn-block">Entre em Contato</a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- end trabalhe -->
+
+
+   <!-- footer -->
+   <div id="footer" class="d-flex align-items-center justify-content-center">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 col-md-6 offset-md-3 text-center">
+
+                   <a href="https://api.whatsapp.com/send?phone=5551991649141&text=Ol%C3%A1+TREX+Engenharia%2C+quero+conversar+sobre+um+projeto." target="_blank">
+                        <i class="fab fa-whatsapp fa-3x"></i>
+                    </a>
+
+                   <!-- <a href="https://t.me/Saqqi_Kraft_Paper_Bags/text='Hello World'" target="_blank">
+                        <i class="fab fa-telegram fa-3x"></i>
+                    </a> -->
+                    <a href="https://www.instagram.com/trexengenharia/" target="_blank">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/trexengenharia/" target="_blank">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/trexengenharia/" target="_blank">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+               </div>
+
+               <div class="col-sm-12 text-center">
+
+                 <!--  <ul style="margin-top: 1rem;">
+                       <li>
+                           <a href="">Início</a>
+                       </li>
+                       <li>
+                           <a href="">Início</a>
+                       </li>
+                   </ul> -->
+
+                   <p>TREX ENGENHARIA &copy; <script type="text/javascript">
+                  document.write(new Date().getFullYear());
+                </script> | Todos os direitos reservados.
+                        <br>
+
+                    </p>
+
+
+               </div>
+
+           </div>
+       </div>
+   </div>
+   <!-- end footer -->
+
+
+
+
+    <!-- script -->
+    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "js/popper.min.js" %}"></script>
+    <script src="{% static "vendor/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/parallax.min.js" %}"></script>
+    <script src="{% static "js/validator.min.js" %}"></script>
+    <script src="{% static "js/message.js" %}"></script>
+
+
+</body>
+
+</html>
+
+
+
+

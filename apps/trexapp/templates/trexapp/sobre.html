@@ -1,0 +1,83 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'img/sobre.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            
+        }
+    
+    </style>
+    
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Sobre</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end main -->
+    
+    <!-- content -->
+    
+    <div id="content" class="d-flex align-items-center parallax-window">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-12 col-md-5 col-md-offset-1">
+                   <h2>Nossa história</h2>
+                    <div class="constructo-aboutUs-content">
+                        <p style="color: #000;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type love the specimen book.</p>
+                        
+						
+                    </div>
+                    
+                </div>
+                    <div class="col-sm-12 col-md-6 offset-1">
+                        <h2>O que fazemos?</h2>
+                        <div class="col-sm-12" style="display: flex">
+                                <div class="about-list">
+                                    <ul>
+                                        <li>Metal Roofing</li>
+                                        <li>Responsive Layout</li>
+                                        <li>Excavating Equipments</li>
+                                        <li>Fully Out of Box Solution</li>
+                                        <li>Multiple Headers</li>
+                                    </ul>
+                                </div>
+                           
+                                <div class="about-list">
+                                    <ul>
+                                        <li>Metal Roofing</li>
+                                        <li>Responsive Layout</li>
+                                        <li>Excavating Equipments</li>
+                                        <li>Fully Out of Box Solution</li>
+                                        <li>Multiple Headers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <a href="#" class="btn btn-primary btn-block">Entre em Contato</a>
+                    </div>
+                    
+                    
+        
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <!-- end content -->
+    
+{% endblock %}

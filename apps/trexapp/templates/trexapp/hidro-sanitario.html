@@ -1,0 +1,86 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'imagens/hidro-2.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    
+    </style>
+    
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Projetos Hidrosanitários</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end main -->
+    
+    <!-- content -->
+    
+    <div id="content" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>O que é Projeto Hidro Sanitário ?</h2>
+                    <div class="">
+                        <p>O projeto hidro sanitário consiste no correto dimensionamento dos sistemas de armazenamento e distribuição de água fria, água quente, água pluvial (das chuvas) e esgoto de acordo com normas específicas. Para estimar o tamanhos de reservatórios,  locais de passagens, pontos de utilização e tamanho da tubulação são usadas as plantas arquitetônicas e estruturais da edificação.</p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>POR QUE FAZER?</h2>
+                    <div class="">
+                        <p>Muitas vezes ao construir uma edificação o proprietário do imóvel deixa a cargo do mestre de obras ou até do pedreiro a escolha dos materiais e tamanhos de encanamentos que com base em sua experiência. O que ocorre é que cada caso é único e para que haja maior eficiência tanto na pressão adequada, tipos e tamanhos dos materiais precisam ser realizados cálculos baseados em normas. Os problemas pelo mau dimensionamento hidro sanitário podem ser dos mais simples como ruídos excessivos até vazamentos, mofo, trincas em paredes, insuficiência de pressão d’água, consumo elevado de água, entre outros.
+                            <br>
+Desta forma o projeto hidro sanitário bem realizado e executado passa a ser um investimento pois poderá gerar economia tanto no momento da instalação pela escolha correta dos tamanhos e tipos de materiais como ao longo de seu uso, economizando água e até energia elétrica no caso de uso de bombas. </p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 offset-1">
+                        <h2>SERVIÇOS OFERECIDOS:</h2>
+                        <div class="col-sm-12" style="display: flex">
+                                <div class="about-list">
+                                    <ul>
+                                        <li> <b>Projeto hidráulico de água fria </b> </li>
+                                        <li> <b>Projeto hidráulico de água quente</b> </li>
+                                        <li> <b>Projeto tubulação e pontos de coleta de esgoto</b> </li>
+
+                                    </ul>
+                                </div>
+                        </div>
+                </div>
+
+                <a href="/contato" class="btn btn-primary btn-block">Entre em contato</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- end content -->
+    
+
+  {% endblock %}

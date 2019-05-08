@@ -1,0 +1,88 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'imagens/reforma-1.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    
+    </style>
+    
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Projetos de Reformas e Manutenção</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end main -->
+    
+    <!-- content -->
+    
+    <div id="content" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>O que são ?</h2>
+                    <div class="">
+                        <p>Reformas são alterações nas características originais de uma edificação a fim de aprimorá-la ao uso que se deseja.  Como exemplo de reforma podemos citar a retirada de paredes de uma sala para dar a sensação de amplitude ao local.
+                            <br>
+Já a manutenção é tem por objetivo manter as características originais de um sistema bem como seu pleno funcionamento. Por exemplo, o simples ato de pintar uma parede na construção civil não se dá apenas por questões estéticas mas também, e principalmente, para conservar as características da parede como sua integridade e impermeabilização.</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>POR QUE FAZER CONOSCO:</h2>
+                    <div class="">
+                        <p>O diferencial da <b>TREX ENGENHARIA</b> além da agilidade, qualidade e economia se dá no momento de concepção da obra ou manutenção, caso seja solicitado o cliente poderá visualizar em 3D como ficará seu sonho após a obra através de softwares gráficos.</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-8 offset-1">
+                        <h2>SERVIÇOS OFERECIDOS: <small style="font-size:.9rem;">Todos os tipos de reformas</small> </h2>
+                        <div class="col-sm-12" style="display: flex">
+                                <div class="about-list">
+                                    <ul>
+                                        <li> <b>Remoção de paredes </b> </li>
+                                        <li> <b>Restauração de fachadas</b> </li>
+                                        <li> <b>Mudanças de layout</b> </li>
+                                        <li> <b>Instalação de churrasqueiras.</b> </li>
+
+                                    </ul>
+                                </div>
+                        </div>
+                </div>
+
+                <a href="/contato" class="btn btn-primary btn-block">Entre em contato</a>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- end content -->
+    
+
+  {% endblock %}

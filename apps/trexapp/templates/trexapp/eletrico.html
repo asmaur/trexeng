@@ -1,0 +1,69 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'img/eletrico-img.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    
+    </style>
+    
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Projetos Elétricos</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end main -->
+    
+    <!-- content -->
+    
+    <div id="content" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>O que é Projeto Elétrico ?</h2>
+                    <div class="">
+                        <p>O projeto de instalações elétricas consiste na definição de tamanhos da bitolas dos fios, posicionamento dos pontos de tomadas e de iluminação e compatibilização dos condutores com os outros projetos como o hidro sanitário, estrutural e de prevenção contra incêndio. </p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>POR QUE FAZER?</h2>
+                    <div class="">
+                        <p>O correto dimensionamento das instalações elétricas além de garantir mais segurança para a edificação, uma vez que é a maior causa de incêndios no Brasil, traz economia na instalação e no uso ao longo de sua vida útil.</p>
+
+
+                    </div>
+
+                </div>
+
+            <a href="/contato" class="btn btn-primary btn-block">Entre em contato</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- end content -->
+    
+
+  {% endblock %}

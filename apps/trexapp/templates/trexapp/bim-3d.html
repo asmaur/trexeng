@@ -1,0 +1,84 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'img/bim3d.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    
+    </style>
+    
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>BIM & 3D</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end main -->
+    
+    <!-- content -->
+    
+    <div id="content" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+             <div class="col-sm-6 offset-sm-3 text-center">
+                    <h3 class="display-4">O que é BIM & 3D</h3>
+                    <hr style="background-color: #fba919; height: .1rem; width: 10rem; margin-top: -.3rem;">
+                   
+                </div>
+                
+                <div class="col-sm-8 offset-sm-2">
+                    
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/suNadRnHy-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                </div>
+                
+            </div>
+            <div class="row">               
+               
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                  <!-- <h2>O QUE É?</h2> -->
+                    <div class="">
+                        <p>O BIM (ou Building Information Model) que significa Modelagem da Informação da Construção ou Modelo da Informação da Construção é um conjunto de informações geradas e mantidas durante todo o ciclo de vida de um edifício.</p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>POR QUE USAR?</h2>
+                    <div class="">
+                        <p>Através de softwares específicos é possível a visualização em 3D da edificação e a visualização de todos os sistemas que compõem uma edificação. Isto facilita e muito a integração dos sistemas de forma a não interferirem entre si no momento da instalação ou da manutenção, trazendo mais segurança e comodidade. Outro aspecto muito útil do BIM é a possibilidade de ele gerar rapidamente a lista completa e precisa de materiais a serem usados, trazendo maior acerto na hora da comprar de materiais, evitando assim a compra de materiais a mais.</p>
+
+
+                    </div>
+
+                </div>
+
+            <a href="/contato" class="btn btn-primary btn-block">Entre em contato</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- end content -->
+    
+{% endblock %}

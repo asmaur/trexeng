@@ -1,0 +1,99 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'imagens/ppci-1.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    
+    </style>
+    
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Projeto de PPCI</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end main -->
+    
+    <!-- content -->
+    
+    <div id="content" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-8 offset-md-2 text-center" style="padding:2rem;">
+
+                    <div class="alert alert-danger" role="alert">
+                        <b>ATENÇÃO:</b> 27 de Dezembro de 2019 é a data limite para regularizar edificações sem PPCI sem o pagamento de multas.
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>O que é PPCI ?</h2>
+                    <div class="">
+                        <p>A sigla <b>PPCI</b> significa <b>PLANO DE PREVENÇÃO E PROTEÇÃO CONTRA INCÊNDIO</b> e se refere ao processo que contém os elementos formais, que todo o proprietário ou responsável pelo uso das áreas de risco de incêndio e edificações, excetuando as de ocupação unifamiliares (casas) de uso exclusivamente residencial, deve encaminhar ao Corpo de Bombeiros do seu estado conforme orientações do referido órgão.
+                            <br>
+                            O <b>PPCI</b> geralmente engloba formulários padronizados do corpo de bombeiros, plantas baixas da edificação, documentos de comprovação de existência, autorização do dono do imóvel para realização do <b>PPCI</b>, anotação de <b>Responsabilidade Técnica (ART)</b>, entre outros documentos a depender do tipo de edificação e seu uso. Todos esses documentos e plantas contém um conjunto de medidas que objetivam evitar ou diminuir os danos causados por um incêndio, permitindo uma saída segura dos usuários da edificação e dificultando a propagação do fogo, pelo menos até a chegada do corpo de bombeiros.</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>POR QUE FAZER ?</h2>
+                    <div class="">
+                        <p>O PPCI ou seu protocolo no corpo de bombeiros é um das primeiras documentações exigidas para a abertura de qualquer negócio.
+Além de ser uma importante ferramenta de segurança, protegendo a vida dos usuários da edificação e todo o patrimônio em seu interior valoriza a edificação, é bem visto pelos clientes e diminui-se muito os valores de apólices de seguro. Dessa forma além de ser um requisito primordial para a segurança de todos também é um investimento. </p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-10 offset-md-1 text-center">
+
+                   <h2>Quem pode fazer?</h2>
+                    <div class="">
+                        <p>O PPCI será elaborado por profissional registrado e com a devida atribuição no Conselho Federal de Engenharia e Agronomia – CONFEA/Conselho Regional de Engenharia e Agronomia – CREA (Sistema CONFEA/CREA) ou Conselho de Arquitetura e Urbanismo – CAU, acompanhado da devida ART/CREA ou RRT/CAU;
+                            <br>
+
+A escolha de um bom profissional é essencial, primeiramente para que haja a certeza da segurança dos usuários da edificação. Em segundo lugar, um projeto bem elaborado pode economizar tempo, material e consequentemente dinheiro.. </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                    
+                    <a href="/contato" class="btn btn-primary btn-block">Entre em contato</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end content -->
+    
+
+   {% endblock %}

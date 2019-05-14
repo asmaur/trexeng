@@ -129,3 +129,4 @@ STATICFILES_DIRS = (
 )
 SITE_ID = 1
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

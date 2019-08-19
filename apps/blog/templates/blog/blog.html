@@ -1,0 +1,102 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% load hosts %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'img/contato.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+    </style>
+
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Blog</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end main -->
+
+<!-- services -->
+
+    <div id="services">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                {% if post %}
+                <div class="col-sm-12 col-md-12 col-lg-12 p-0">
+
+                    <div class="jumbotron" style="margin: 0 -2rem 0 -2rem;">
+                      <h2 >{{post.title}}</h2>
+                        <span class="badge badge-dark">{{post.projeto}}</span>
+                             <span class="badge badge-dark">{{post.created_at|date:"d M Y"}}</span>
+
+                      <hr class="my-4">
+                      <p class="lead">
+                          {{post.content}}
+
+                      </p>
+
+                    </div>
+
+
+                </div>
+
+                {% endif %}
+
+            </div>
+
+
+        </div>
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-2 text-center">
+                        <h2 style="margin-top: 5rem;">imagens</h2>
+                        <p>A reforma em imagens.</p>
+                    </div>
+                </div>
+            </div>
+
+            {% if images %}
+
+            <div class="container-fluid" id="proj-img">
+                <div class="row" id="lightgallery">
+                    {% for imag in images %}
+                    <a class="col-sm-12 col-md-6 col-lg-4 p-1 item" href="{{base_url}}{{imag.trex_img}}">
+                        <img src="{{base_url}}{{imag.trex_img}}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                    {% endfor %}
+
+
+
+                </div>
+            </div>
+        {% endif %}
+
+
+
+
+
+
+    </div>
+
+        {% endblock %}

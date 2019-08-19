@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+admin.autodiscover()
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('apps.trexapp.urls')),
+    #path('', include('apps.trexapp.urls')),
+    #path('blog/', include('apps.blog.urls')),
+    #path('admin/', admin.site.urls),
+
 ]
 handler404 = 'apps.trexapp.views.error_404_view'
 handler403 = 'apps.trexapp.views.error_403_view'

@@ -1,0 +1,117 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'img/contato.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+    </style>
+
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Blog</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end main -->
+
+<!-- services -->
+
+    <div id="services">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-lg-12 p-0">
+
+                    <div class="jumbotron" style="margin: 0 -2rem 0 -2rem;">
+                      <h2 >Viga metalicas para substiruir uma parede.</h2>
+                        <span class="badge badge-dark">Projeto de reforma</span>
+                             <span class="badge badge-dark">12/09/1987</span> <br>
+
+                      <hr class="my-4">
+                      <p class="lead">
+                          It uses utility classes for typography and spacing to space content out within the larger container.
+                          It uses utility classes for typography and spacing to space content out within the larger container.
+                          It uses utility classes for typography and spacing to space content out within the larger container.
+
+                      </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-2 text-center">
+                        <h2 style="margin-top: 5rem;">imagens</h2>
+                        <p>A reforma em imagens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="proj-img">
+                <div class="row" id="lightgallery">
+                    <a class="col-lg-3 col-sm-6 col-xs-12 p-1 item" href="{% static "imagens/ppci-3.jpg" %}">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                    <a class="col-lg-3 col-sm-6 col-xs-12 p-1 item" href="{% static "imagens/ppci-3.jpg" %}">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                    <a href="{% static "imagens/ppci-3.jpg" %}" class="col-lg-3 col-sm-6 col-xs-12 p-1 item">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                    <a href="{% static "imagens/ppci-3.jpg" %}" class="col-lg-3 col-sm-6 col-xs-12 p-1 item">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                    <a href="{% static "imagens/ppci-3.jpg" %}" class="col-lg-3 col-sm-6 col-xs-12 p-1 item">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                    <a href="{% static "imagens/ppci-3.jpg" %}" class="col-lg-3 col-sm-6 col-xs-12 p-1 item">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                    <a href="{% static "imagens/ppci-3.jpg" %}" class="col-lg-3 col-sm-6 col-xs-12 p-1 item">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+                    <a href="{% static "imagens/ppci-3.jpg" %}" class="col-lg-3 col-sm-6 col-xs-12 p-1 item">
+                        <img src="{% static "imagens/ppci-3.jpg" %}" alt="" class="img-fluid clients-btm-img">
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+
+
+    </div>
+
+        {% endblock %}

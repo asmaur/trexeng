@@ -1,0 +1,79 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'img/contato.jpg' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+    </style>
+
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1>Blog</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end main -->
+
+<!-- services -->
+
+    <div id="services">
+
+        <div class="container">
+
+           <div class="row">
+                <div class="col-sm-6 offset-sm-3 text-center">
+                    <h3>Nossos Projetos</h3>
+                    <hr style="background-color: #fba919; height: .1rem; width: 10rem; margin-top: -.3rem;">
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                {% if posts %}
+
+                {% for post in posts %}
+
+                <div class="col-sm-12 col-md-4 p-2">
+                    <div class="card">
+                        <a href="/projetos/{{post.code}}/{{post.slug}}/">
+                            <img class="card-img-top" src="{{base_url}}{{post.capa}}" alt="Card image cap">
+                        </a>
+                         <div class="card-body">
+                             <span class="badge badge-dark">{{post.projeto}}</span>
+                             <span class="badge badge-dark">{{post.created_at|date:"d M Y"}}</span> <br>
+                             <a href="/projetos/{{post.code}}/{{post.slug}}/" class="card-title" style="font-size: 1.2rem; padding-bottom:1.2rem; color: #fba919; font-weight:600;">{{post.title}}.</a>
+                        <p class="card-text text-justify">
+                            {{post.content|truncatewords:20}}
+                        </p>
+
+                     <!--   <a href="/projetos/ppci" class="btn btn-primary">leia mais</a> -->
+
+                      </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            {% endfor %}
+            {% endif %}
+
+        </div>
+    </div>
+
+        {% endblock %}

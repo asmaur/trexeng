@@ -66,8 +66,8 @@ ROOT_HOSTCONF = 'trexsite.hosts'
 DEFAULT_HOST = 'www'
 
 if DEPLOY:
-    PARENT_HOST = 'https://trexengenharia.com.br'
-    MEDIA_URL_PATCH = "https://blog.trexengenharia.com.br/media/"
+    PARENT_HOST = 'http://trexengenharia.com.br'
+    MEDIA_URL_PATCH = "http://blog.trexengenharia.com.br/media/"
 
 else:
     PARENT_HOST = 'trexengenharia.com.br:8000'

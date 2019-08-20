@@ -43,6 +43,7 @@ class Post(models.Model):
     capa = ProcessedImageField(upload_to=path_post, processors=[ResizeToFit(720, 405), Watermark(text="TREX ENGENHARIA")], format='JPEG', options={'quality': 60}, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    publicar = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['-created_at']

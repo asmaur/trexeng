@@ -31,14 +31,14 @@
 
 <!-- services -->
 
-    <div id="services">
+    <div id="content">
 
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="row">
 
                 {% if post %}
-                <div class="col-sm-12 col-md-12 col-lg-12 p-0">
+                <div class="col-sm-12 col-md-12 col-lg-12">
 
                     <div class="jumbotron" style="margin: 0 -2rem 0 -2rem;">
                       <h2 >{{post.title}}</h2>
@@ -61,23 +61,18 @@
             </div>
 
 
-        </div>
-
-
-
-
-            <div class="container">
                 <div class="row">
+
                     <div class="col-md-8 offset-2 text-center">
                         <h2 style="margin-top: 5rem;">imagens</h2>
-                        <p>A reforma em imagens.</p>
+                        <p class="text-center">A reforma em imagens.</p>
                     </div>
-                </div>
-            </div>
 
-            {% if images %}
 
-            <div class="container-fluid" id="proj-img">
+            <div  id="projimg">
+
+                {% if images %}
+
                 <div class="row" id="lightgallery">
                     {% for imag in images %}
                     <a class="col-sm-12 col-md-6 col-lg-4 p-1 item" href="{{base_url}}{{imag.trex_img}}">
@@ -87,15 +82,16 @@
                     {% endfor %}
 
 
-
                 </div>
+
+                {% endif %}
+
             </div>
-        {% endif %}
+
+            </div>
 
 
-
-
-
+    </div>
 
     </div>
 

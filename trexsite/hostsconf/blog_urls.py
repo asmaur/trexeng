@@ -9,3 +9,6 @@ urlpatterns = [
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'apps.trexapp.views.error_404_view'
+handler403 = 'apps.trexapp.views.error_403_view'

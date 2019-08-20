@@ -7,5 +7,4 @@ python-decouple==3.1
 django-hosts==3.0
 Pillow==5.4.1
 django-imagekit==4.0.2
-numpy
-django-subdomains==2.1.0
+numpy==1.17.0

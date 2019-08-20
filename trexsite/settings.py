@@ -27,6 +27,7 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
+DEPLOY = config('DEPLOY', cast=bool)
 
 # Application definition
 
@@ -64,12 +65,13 @@ ROOT_URLCONF = 'trexsite.urls'
 ROOT_HOSTCONF = 'trexsite.hosts'
 DEFAULT_HOST = 'www'
 
-if DEBUG:
-    PARENT_HOST = 'trexengenharia.com.br:8000'
-    MEDIA_URL_PATCH = "http://blog.trexengenharia.com.br:8000/media/"
-else:
+if DEPLOY:
     PARENT_HOST = 'https://trexengenharia.com.br'
     MEDIA_URL_PATCH = "https://blog.trexengenharia.com.br/media/"
+
+else:
+    PARENT_HOST = 'trexengenharia.com.br:8000'
+    MEDIA_URL_PATCH = "http://blog.trexengenharia.com.br:8000/media/"
 
 
 TEMPLATES = [
@@ -95,20 +97,21 @@ WSGI_APPLICATION = 'trexsite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-else:
+if DEPLOY:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db_TREX_ENGENHARIA_db.sqlite3'),
         }
     }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 
 
 # Password validation

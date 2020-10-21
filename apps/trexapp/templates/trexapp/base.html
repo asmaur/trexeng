@@ -119,8 +119,8 @@
 
                    {% for socio in socios %}
 
-                   <a href="https://api.whatsapp.com/send?phone=5551{{socio.numero}}&text=Ol%C3%A1+TREX+Engenharia%2C+quero+conversar+sobre+um+projeto." target="_blank"
-                   data-toggle="tooltip" data-placement="top" title="(51) {{socio.numero}}">
+                   <a href="https://api.whatsapp.com/send?phone=55{{socio.numero}}&text=Ol%C3%A1+TREX+Engenharia%2C+quero+conversar+sobre+um+projeto." target="_blank"
+                   data-toggle="tooltip" data-placement="top" title="{{socio.numero}}">
                         <i class="fab fa-whatsapp fa-3x"></i>
                     </a>
                    {% endfor %}

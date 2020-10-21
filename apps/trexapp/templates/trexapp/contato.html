@@ -55,9 +55,14 @@
 
                         <p class="text-center">Email : <a href="mailto:contato@trexengenharia.com.br">contato@trexengenharia.com.br</a></p>
                     <!--    <p class="text-center"> <a href="tel:5551983023518" style="color: #000; font-weight: 600;"> telefone(principal) :+55 51 994-707-107</a> </p> -->
-                        <p class="text-center"> <a href="tel:5551983023518" style="color: #000; font-weight: 600;"> telefone :+55 51 99164-9141</a> </p>
-                        <p class="text-center"> <a href="tel:5551981434943" style="color: #000; font-weight: 600;"> telefone :+55 51 99815-5788</a> </p>
+                        {% if socios %}
 
+                        {% for socio in socios %}
+
+                        <p class="text-center"> <a href="tel:55{{socio.numero}}" style="color: #000; font-weight: 600;"> telefone :+55{{socio.numero}}</a>
+                        </p>
+                        {% endfor %}
+                        {% endif %}
 
 
                         <hr style="width: 100%">

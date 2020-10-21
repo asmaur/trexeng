@@ -14,17 +14,15 @@ def contato(request):
 def ppci(request):
     return render(request, "trexapp/ppci.html")
 
-def eletricos(request):
-    return render(request, "trexapp/eletrico.html")
+def laudos(request):
+    return render(request, "trexapp/laudos.html")
 
 def estruturas(request):
     return render(request, "trexapp/estrutura.html")
 
-def bim_3d(request):
-    return render(request, "trexapp/bim-3d.html")
 
-def hidro_sanitarios(request):
-    return render(request, "trexapp/hidro-sanitario.html")
+def obras(request):
+    return render(request, "trexapp/obras.html")
 
 def reformas(request):
     return render(request, "trexapp/reforma.html")

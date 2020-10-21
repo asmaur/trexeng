@@ -1,0 +1,134 @@
+{% extends "trexapp/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <!-- main -->
+    <style>
+        #main{
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('{% static 'img/laudos.png' %}');
+            //background-image: url(img/extintor-capa.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    
+    </style>
+    
+    <div id="main" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1> Laudos Técnicos </h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end main -->
+    
+    <!-- content -->
+    
+    <div id="content" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12 offset-1">
+                    <h2> Laudos Técnicos de Manutenção e Inspeção Predial (LTIP) </h2>
+                    <div class="col-sm-12 col-md-12" style="display: flex">
+
+                            <p>
+                                A TREX Engenharia atua no acompanhamento técnico da edificação de modo a manter o imóvel em bom estado de conservação, em conformidade com a legislação municipal sem que haja descumprimento de suas disposições, além de orientar os proprietários e promover a manutenção preventiva da edificação e de seus equipamentos com o intuito de qualificar o espaço habitado.
+
+                        <br> <br>
+                        Decreto n° 18.574/2014 – regulamenta o art. 10 da Lei Complementar n° 284/1992 intitula a obrigação das edificações de Porto Alegre a apresentarem o LTIP até fevereiro de 2015, tendo que ser renovado a cada 5 anos.
+                        <br>
+
+                        Art. 10 – Responsabilidades do proprietário ou síndico dispõe sobre as regras gerais e específicas a serem obedecidas pelos proprietários na manutenção e conservação das edificações, no que concerne o controle da manutenção preventiva e conservação das edificações.
+                        <br>
+
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 offset-1">
+                        <h4 style="text: small;">Objetivo da TREX Engenharia para com seus clientes:</h4>
+                        <div class="col-sm-12" style="display: flex; margin-bottom: 2rem;">
+                                <div class="about-list">
+                                    <ul>
+                                        <li> <b> Orientação adequada de como solucionar os problemas existentes</b> </li>
+                                        <li> <b> Verificação de problemas despercebidos pelos usuários</b> </li>
+                                        <li> <b> Busca pela conservação dos edifícios estabelecendo uma relação de parceria com os condomínios</b> </li>
+
+
+                                    </ul>
+                                </div>
+                        </div>
+                </div>
+
+
+                <div class="col">
+                <hr>
+                </div>
+
+                <div class="col-sm-12 col-md-12 offset-1">
+                    <h2> Laudo Técnico de Marquises e Fachadas </h2>
+                    <div class="col-sm-12 col-md-12" style="display: flex">
+                        <p>
+A estabilidade estrutural de sacadas, marquises e fachadas é avaliada a fim de que não haja comprometimento da segurança dos pedestres e usuários dos edifícios, que devem ser vistoriados por profissionais habilitados.
+                            <br> <br>
+                            A TREX Engenharia atua na elaboração desse Laudo, documento que deve ser renovado a cada 3 anos. Para o laudo com recomendações a serem executadas em nome da segurança da estrutura, há um prazo de 60 dias para a execução das obras.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-12" style="display: flex; margin-top: 2rem; margin-bottom: 2rem;">
+                    <div class="about-list">
+                        <p>
+                            Decreto n° 9425/1989 – regulamenta a aplicação das medidas de conservação de marquises estabelecidas na Lei n° 6323/1988 e dá outras providências.
+                            <br>
+Intitula a obrigação de vistoria e de execução de um Laudo Técnico de Estabilidade Estrutural sob responsabilidade de profissional habilitado registrado no CREA, para os elementos construtivos como sacadas, marquises e fachadas de edifícios que se projetam sobre os logradouros públicos.
+                        </p>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                <hr>
+                </div>
+
+                <div class="col-sm-12 col-md-12 offset-1">
+                    <h2> Laudos Técnicos para Reformas e Ampliações </h2>
+                    <div class="col-sm-12 col-md-12" style="display: ">
+                        <p>
+Este serviço avalia o escopo da reforma pretendida e eventuais interferências nos sistemas do edifício, analisa a existência prévia de vícios ou anomalias que possam impedir a execução da reforma e aprova o Plano de Reforma.                        </p>
+                        <br>
+
+                        <p>
+                        <h3>Laudos de Estabilidade Estrutural</h3>
+A viabilidade ou não de uma reforma também contempla a análise estrutural da edificação, atestada pelo Laudo de Estabilidade Estrutural que analisa o estado de conservação da estrutura e que prevê soluções técnicas adequadas em caso de alteração do projeto original.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+                <hr>
+                </div>
+
+
+
+                <a href="/contato" class="btn btn-primary btn-block">Fale conosco</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- end content -->
+    
+
+  {% endblock %}

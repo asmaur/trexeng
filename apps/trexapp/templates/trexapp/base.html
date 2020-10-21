@@ -8,16 +8,16 @@
     <!-- Viewport Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>TREX Engenharia | Soluções Inovadoras de engenharia.</title>
+    <title>TREX Engenharia | A solução certa para seus projetos.</title>
 
-    <meta name="description" content="A trex é uma empresa de engenharia que atua no segmento da construção civil, tendo como suas principais atividades a elaboração de projetos e reformas. Na área de projetos trabalhamos principalmente com PPCIs, estruturas, hidrossanitários e elétricos. Além disso, a Trex também é especializada na compatibilização de projetos em 3D utilizando softwares BIM. Na área de reformas, trabalhamos junto ao cliente, avaliando suas necessidades e propondo soluções inteligentes, buscando terminar a obra com agilidade e com o menor desperdício de materiais possível. A Trex atua principalmente na região de Porto Alegre, atendendo também demandas de cidades próximas, como Canoas, São Leopoldo, Novo Hamburgo">
+    <meta name="description" content="A Trex Engenharia é uma empresa de engenharia que atua no segmento da construção civil, tendo como suas principais atividades a elaboração e execução de PPCI (Plano de Prevenção e Proteção Contra Incêndio. Trabalhamos com PPCIs, projetos estruturais, hidraulica e hidrossanitários otimizando os custos de execução para nossos clientes. A Trex Engenharia atua principalmente na região de Porto Alegre, atendendo também demandas de cidades próximas, como Canoas, São Leopoldo, Novo Hamburgo.">
     <meta name="keywords" content="PPCI, Alvará dos bombeiros, reformas, manutenção predial, projeto hidro-sanitario, encanamentos prediais, projetos estruturais">
     <meta name="author" content="Maurice AINON, am.amauri@outlook.com">
 
     <!-- mobile -->
     <meta property="og:title" content="TREX Engenharia | Soluções Inovadoras de engenharia.">
     <meta property="og:image" content="{%  static "img/icontrex.png" %}">
-    <meta property="og:description" content="A trex é uma empresa de engenharia que atua no segmento da construção civil, tendo como suas principais atividades a elaboração de projetos e reformas. Na área de projetos trabalhamos principalmente com PPCIs, estruturas, hidrossanitários e elétricos. Além disso, a Trex também é especializada na compatibilização de projetos em 3D utilizando softwares BIM. Na área de reformas, trabalhamos junto ao cliente, avaliando suas necessidades e propondo soluções inteligentes, buscando terminar a obra com agilidade e com o menor desperdício de materiais possível. A Trex atua principalmente na região de Porto Alegre, atendendo também demandas de cidades próximas, como Canoas, São Leopoldo, Novo Hamburgo">
+    <meta property="og:description" content="A Trex Engenharia é uma empresa de engenharia que atua no segmento da construção civil, tendo como suas principais atividades a elaboração e execução de PPCI (Plano de Prevenção e Proteção Contra Incêndio. Trabalhamos com PPCIs, projetos estruturais, hidraulica e hidrossanitários otimizando os custos de execução para nossos clientes. A Trex Engenharia atua principalmente na região de Porto Alegre, atendendo também demandas de cidades próximas, como Canoas, São Leopoldo, Novo Hamburgo.">
     <meta property="og:url" content="http://trexengenharia.com.br">
     <!-- <meta name="twitter:card" content="summary_large_image"> -->
 
@@ -58,22 +58,23 @@
           Serviços
         </a>
         <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/projetos/ppci">PPCI & Alvarás</a>
+            <a class="dropdown-item" href="/ppci">Execução de PPCI & Alvarás</a>
           <div class="dropdown-divider"></div>
-        <!--  <a class="dropdown-item" href="/projetos/hidro-sanitarios">Projetos Hidrosanitários</a>
+            <a class="dropdown-item" href="/obras">Execução de Obras</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/projetos/eletricos">Projetos Elétricos</a> -->
+            <a class="dropdown-item" href="/laudos">Laudos Técnicos</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/projetos/estruturas">Projetos Estruturais</a>
+
+          <a class="dropdown-item" href="/estruturas">Projetos Estruturais</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/projetos/reformas">Projetos de Reformas & laudos</a>
-        <!--  <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/projetos/bim-3d">BIM & 3D</a> -->
+          <a class="dropdown-item" href="/reformas"> Reformas </a>
+
         </div>
       </li>
+        <!--
         <li class="nav-item">
         <a class="nav-link" href="https://blog.trexengenharia.com.br">Projetos</a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="/contato/">Contato</a>
       </li>
@@ -113,13 +114,18 @@
            <div class="row">
                <div class="col-sm-12 col-md-6 offset-md-3 text-center">
 
-                   <a href="https://api.whatsapp.com/send?phone=5551991649141&text=Ol%C3%A1+TREX+Engenharia%2C+quero+conversar+sobre+um+projeto." target="_blank">
+
+                    {% if socios %}
+
+                   {% for socio in socios %}
+
+                   <a href="https://api.whatsapp.com/send?phone=5551{{socio.numero}}&text=Ol%C3%A1+TREX+Engenharia%2C+quero+conversar+sobre+um+projeto." target="_blank"
+                   data-toggle="tooltip" data-placement="top" title="(51) {{socio.numero}}">
                         <i class="fab fa-whatsapp fa-3x"></i>
                     </a>
+                   {% endfor %}
+                   {% endif %}
 
-                   <!-- <a href="https://t.me/Saqqi_Kraft_Paper_Bags/text='Hello World'" target="_blank">
-                        <i class="fab fa-telegram fa-3x"></i>
-                    </a> -->
                     <a href="https://www.instagram.com/trexengenharia/" target="_blank">
                         <i class="fab fa-instagram fa-3x"></i>
                     </a>
@@ -148,6 +154,12 @@
                         <br>
 
                     </p>
+
+                   <br>
+
+                   <p>
+                       Designed by <a href="htpps://wanubit.com">wanubit</a>
+                   </p>
 
 
                </div>

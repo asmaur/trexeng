@@ -59,7 +59,7 @@
 
                         {% for socio in socios %}
 
-                        <p class="text-center"> <a href="tel:55{{socio.numero}}" style="color: #000; font-weight: 600;"> telefone :+55{{socio.numero}}</a>
+                        <p class="text-center"> <a href="https://api.whatsapp.com/send?phone=55{{socio.numero}}&text=Ol%C3%A1+TREX+Engenharia%2C+quero+conversar+sobre+um+projeto." style="color: #000; font-weight: 600;"> Tel (WhatsApp): +55{{socio.numero}}</a>
                         </p>
                         {% endfor %}
                         {% endif %}

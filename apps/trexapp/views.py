@@ -27,8 +27,8 @@ def obras(request):
 def reformas(request):
     return render(request, "trexapp/reforma.html")
 
-def sitemap(request):
-    return render(request, "trexapp/trex_map.xml")
+#def sitemap(request):
+#    return render(request, "trexapp/trex_map.xml")
 
 
 def contact_message(request):

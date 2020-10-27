@@ -14,14 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+
+
+
+
 admin.autodiscover()
+
 
 urlpatterns = [
     #path('', include('apps.trexapp.urls')),
     #path('blog/', include('apps.blog.urls')),
     #path('admin/', admin.site.urls),
-
 ]
 handler404 = 'apps.trexapp.views.error_404_view'
 handler403 = 'apps.trexapp.views.error_403_view'
